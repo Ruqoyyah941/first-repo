@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try working with DOM</title>
+</head>
+<body>
+    <div id="demo">
+        <p>Let us test working with DOM with this paragraph</p>
+        <p>This is the second paragraph we'll be using to test the DOM</p>
+    </div>
+    <button onclick="show()">Click Me</button>
+    <style>
+        div{
+            border: 2px dotted black;
+            padding: 20px;
+            background-color: blueviolet;
+            background-clip: content-box;
+        }
+    </style>
+    <script>
+        var a = document.getElementById("demo");
+        var arr = a.childNodes;
+        for(var x=0;x<arr.length;x++) {
+            arr[x].innerHTML = "new text";
+        }
+        function show() {
+            alert ("What do u want to do?");
+        }
+    </script>
+    <p><B>bold text</B></p>
+    <p><big>big text</big></p>
+    <p><italic>italic text</italic></p>
+    <p><small>small text</small></p>
+    <p><strong>strong text</strong></p>
+    <p><sub>subscripted text</sub></p>
+    <p><sup>superscripted text</sup></p>
+    <p><ins>inserted text</ins></p>
+    <p><del>deleted text</del></p>
+</body>
+</html>

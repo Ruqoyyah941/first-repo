@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Trial With Css and javascript</title>
+    <style>
+        h1 {
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30pt;
+            text-shadow: 5px 2px 4px gray;
+        }
+        h2 {
+            color: aquamarine;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 300;
+            font-size: small;
+            background-color: black;
+        }
+        p {
+            text-align: left;
+            text-indent: 60px;
+            letter-spacing: normal;
+            word-spacing: 30px;
+        }
+        td.top {
+            vertical-align: top;
+        }
+        td.middle {
+            vertical-align: middle;
+        }
+        td.bottom {
+            vertical-align: bottom;
+        }
+        body {
+            background-image: url("Arike.png");
+            background-color: bisque;
+            background-repeat: repeat-x;
+            background-attachment: inherit;
+        }
+        img{
+            float: left;
+            width: 120px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        I just want to see what this <strong>heading</strong> will look like
+    </h1>
+    <h2>
+        What is the <strong>difference</strong> between the two headings?
+    </h2>
+    <p>Let us just know how everything we've learnt can be put to practice little by little. It's going to be difficult since it is more like working alone but one just has to try </p>
+    <p>Right now, I want to <strong>test</strong> if I'll be able to include <strong>style</strong> in a table</p>
+    <table border="1" cell padding="2" cell spacing="0" style="height: 150px;">
+        <tr>
+            <td class="top">Positive</td>
+            <td class="middle">Comparative</td>
+            <td class="bottom">Superlative</td>
+        </tr>        
+    </table>
+        <script>
+        for (i=1; i<=5; i++) {
+            document.write(i + "<br />");
+        }
+        var i=0;
+        while (i<=10){
+            document.write(i + "<br />");
+            i++;
+        }
+        var i=20;
+        do {
+            document.write(i + "<br />");
+            i++;
+        }
+        while (i<=25);
+        var x=0;
+        while (x<6){
+            x++;
+        }
+        document.write(x);
+        var number=Math.sqrt(100);
+        document.write(number);
+        var n=prompt("1600", "Calculate the square root");
+        var answer=Math.sqrt(1600);     
+    </script>
+</body>
+</html>

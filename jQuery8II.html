@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON string to JSON array</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            var jsonString = '[{"firstName":"Todd","lastName":"Grover","gender":"Male","salary":50000},{"firstName":"Sara","lastName":"Baker","gender":"Female","salary":40000}]';
+            var employeesJSON = JSON.parse(jsonString);
+
+            var result = '';
+            $.each(employeesJSON, function(i, item){
+               result += 'First Name = ' + item.firstName + '<br/>';
+               result += 'Last Name = ' + item.lastName + '<br/>';
+               result += 'Gender = ' + item.gender + '<br/>';
+               result += 'Salary = ' + item.salary + '<br/><br/>';
+            });
+        $('#resultDiv').html(result);
+        });
+    </script>
+    <div id="resultDiv"></div>
+    For the parse method to work, we need to provide a valid JSON string
+</body>
+</html>

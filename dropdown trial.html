@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown trial</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(wallpaper.jpg);
+            background-size: cover;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background-color: red;
+        }
+        nav p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: cyan;
+            font-size: 24px;
+            line-height: 55px;
+            float: left;
+            padding: 0px 20px;
+        }
+        nav ul{
+            float: left;
+        }
+        nav ul li{
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+        nav ul li a{
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: cyan;
+            font-size: 14px;
+            padding: 22px 14px;
+            text-decoration: none;
+        }
+        nav ul li ul{
+            display: none;
+            position: absolute;
+            background-color: blue;
+            padding: 10px;
+            border-radius: 0px 0px 6px 6px;
+        }
+        nav ul li:hover ul{
+            display: block;
+        }
+        nav ul li ul li{
+            width: 150px;
+            border-radius: 4px;
+        }
+        nav ul li ul li a{
+            padding: 8px 14px;
+        }
+        nav ul li ul li a:hover{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Bradley Events</p>
+        <ul>
+            <li><a href="dropdown trial.html">Home</a></li>
+            <li><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="#">Decorations</a></li>
+                    <li><a href="#">Cakes and pastries</a></li>
+                    <li><a href="#">Hair accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

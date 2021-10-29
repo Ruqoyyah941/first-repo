@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novice replicate.com</title>
+    <style>
+        html{
+            touch-action: manipulation;
+            display: block;
+        }
+        body, button, input, select, textarea{
+            color: #424242;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        body{
+            background: #fff;
+        }
+        h1, h2, h3, h4, h5, h6,
+        body, button, input, select, textarea{
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            line-height: 1.5px;
+            margin: 0;
+            display: block;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        :before, :after{
+            box-sizing: border-box;
+        }
+        ::selection{
+            background:#eaaa70;
+        }
+        script{
+            display: none;
+        }
+        .fb_reset{
+            background: none;
+            border: 0;
+            border-spacing: 0;
+            color: #000;
+            cursor: auto;
+            direction: 1tr;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: normal;
+            letter-spacing: normal;
+            line-height: 1px;
+            margin: 0;
+            overflow: visible;
+            padding: 0;
+            text-align: left;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-indent: 0;
+            text-shadow: none;
+            visibility: visible;
+            white-space: normal;
+            word-spacing: normal;
+        }
+        element.style{
+            position: absolute;
+            top: -1000px;
+            width: 0px;
+            height: 0px;
+        }
+        .fb_reset div{
+            overflow: hidden;
+        }
+        #masthead{
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1000;
+        }
+        article, aside, details, figcaption,
+        figure, footer, header, hgroup, main, menu,
+        nav, section, summary{
+            display: block;
+        }
+        .site-header{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            height: 60px;
+            background-color: forestgreen;
+            box-shadow: none;
+        }
+        .site-header-inner{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .container{
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .menu-container{
+            position: absolute;
+            text-align: right;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 60px;
+            z-index: 5000;
+        }
+        .container:before, .container:after,
+        .row:after{
+            display: table;
+            content: " ";
+        }
+        .container:after,
+        .row:after{
+            clear: both;
+        }
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .row:before, .row:after{
+            display: table;
+            content: " ";
+        }
+        .col-md-12{
+            width: 100%;
+        }
+        .col-md-12{
+            float: left;
+        }
+        .col-md-12{
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .col-md-4{
+            width: 33.33333%;
+            float: left;
+            position: relative;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .site-branding{
+            margin-top: 20px;
+        }
+        .site-header .home-link{
+            min-height: 0;
+        }
+        .home-link, .site-description a,
+        .site-title a{
+            text-decoration: none;
+        }
+        a{
+            color: lightcoral;
+            transition: all 0.1s ease-in;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:-webkit-any-link{
+            cursor: pointer;
+        }
+        a img{
+            border: 0;
+        }
+        img{
+            vertical-align: middle;
+        }
+        .topics-btn{
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 4px;
+            padding-bottom: 20px;
+            margin-left: 20px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            float: right;
+            cursor: pointer;
+        }
+        h4, .topics-btn, 
+        .entry-header h2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .topics-btn .fa{
+            font-size: 8px;
+            vertical-align: top;
+            margin-top: 3px;
+            transition: transform .1s cubic-bezier(.25,0,1,1);
+            transform: rotateX(0deg);
+            transform-origin: 50% 60%;
+        }
+        .fa{
+            color: #eaaa70;
+            display: inline-block;
+            font: normal normal normal 14px/1;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-rendering: auto;
+            font-size: inherit;
+            -webkit--webkit-font-smoothing: antialiased;
+            transform: translate(0, 0);
+            line-height: 1;
+        }
+        .fa-chevron-down:before{
+            content: "\f078";
+        }
+        .category-menu-wrap{
+            width: 420px;
+            float: right;
+            color: #ffff;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            position: relative;
+            z-index: 200;
+            top: 0;
+            padding-top: 0;
+            opacity: 0;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.27, 1.76, 0.95, 1.19);
+            transition-delay: 0s;
+        }
+        .top-widgets{
+            animation: 0.4s cubic-bezier(.11,.35,.25,.99) 0s 1 slideUpArticle;
+        }
+        .top-widgets{
+            font-size: 16px;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        .category-menu-wrap
+        .top-widgets h2{
+            height: 42px;
+            border-bottom: 1px solid #E2E7EB;
+            margin-bottom: 0;
+            cursor: pointer;
+            transition: margin-bottom 150ms ease;
+        }
+        .top-widgets h2{
+            height: 56px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 10;
+            background-color: #fff;
+            color: #000;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            transition: all 150ms ease;
+        }
+        h1, h2, h5, h6{
+            clear: both;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+        h2{
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        h3{
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+        }
+        .category-menu-wrap
+        .top-widgets h2:after{
+            display: none;
+        }
+        .category-menu-wrap 
+        .top-widgets h2 span{
+            padding-left: 25px;
+            padding-top: 13px;
+            padding-right: 25px;
+            letter-spacing: 3px;
+            text-transform: capitalize;
+            font-weight: 500;
+            font-size: 13px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .top-widgets h2 span{
+            font-style: normal;
+            display: block;
+            padding-top: 18px;
+            padding-right: 20px;
+            font-size: 26px;
+            letter-spacing: -0.5px;
+            font-weight: 700;
+            font-style: normal;
+            display: block;
+        }
+        .category-menu-wrap
+        .top-widgets h2 .expand{
+            top: 18px;
+            right: 25px;
+            font-size: 18px;
+            color: #000;
+        }
+        .top-widgets h2 .expand{
+            position: absolute;
+            display: block;
+            line-height: 5px;
+        }
+        .category-menu-wrap
+        .item-wrap .menu{
+            padding: 0 25px 12px 25px;
+            margin-bottom: 0;
+        }
+        ul.menu{
+            list-style: none;
+            margin-top: 0;
+            padding: 0;
+        }
+        .top-widgets ul{
+            display: none;
+        }
+        .top-widgets-reveal ul{
+            display: block;
+        }
+        ol, ul{
+            margin-bottom: 26px;
+        }
+        ul{
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        li.menu-item{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .category-menu-wrap
+        .item-wrap .menu .topic-card{
+            width: auto;
+            display: block;
+            background-color: #ffffff;
+            padding: 0px 12px;
+            color: #11496B;
+            font-size: 15px;
+            height: auto;
+        }
+        .topic-card{
+            display: inline-block;
+            width: auto;
+            height: 52px;
+            position: relative;
+            margin-right: 5px;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+            border-radius: 3px;
+            background-color: #e6f0f9;
+        }
+        .category-menu-wrap
+        .item-wrap .menu .topic-card a{
+            color: #11496B;
+        }
+        .category-menu-wrap
+        .item-wrap .menu .coming-soon{
+            color: #424242;
+        }
+        .top-widgets
+        .coming-soon{
+            cursor: pointer;
+            background-color: #ebedef;
+        }
+        .top-widgets
+        .coming-soon span{
+            margin: auto;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 9px;
+            font-size: 11px;
+            text-align: center;
+            color: #a1a2a5;
+            font-weight: 700;
+        }
+        .top-widgets
+        .coming-soon h3{
+            color: #1d1d1d;
+            padding-top: 12px;
+            font-size: 14px;
+        }
+        .top-widgets h3{
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            margin: 0;
+            padding: 18px 20px 0;
+            color: #191e26;
+        }
+        .darken{
+            background-color: navy;
+            position: fixed;
+            height: 0;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+            opacity: 0;
+            transition: opacity .2s cubic-bezier(.27,1.76,.951.19);
+        }
+        #page{
+            min-height: calc(100% - 65px);
+            position: relative;
+            padding-bottom: 279px;
+            z-index: 10;
+        }
+        #content{
+            padding-top: 0;
+            position: relative;
+            z-index: 10;
+        }
+        #main-categories-wrap{
+            width: 100%;
+            min-height: 500px;
+            position: relative;
+            padding-top: 52px;
+            padding-bottom: 52px;
+            background-color: #DFEBF3;
+            overflow: hidden;
+        }
+        #main-categories-wrap .categories-container{
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #main-categories-wrap .categories-container .item{
+            height: 52px;
+            width: auto;
+            display: inline-block;
+            padding: 25px 20px 0px 38px;
+            background-color: #fff;
+            position: relative;
+            opacity: 1;
+            color: #000;
+            border-radius: 0px;
+            box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 6%);
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            z-index: 100;
+        }
+        #main-categories-wrap .categories-container
+        .item span{
+            position: absolute;
+            top: 25px;
+            left: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #main-categories-wrap .back-mountains{
+            position: absolute;
+            bottom: -60px;
+            height: 400px;
+            width: 100%;
+            background-image: url("back-mountains.jpg");
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-position: 50% bottom;
+            opacity: 0;
+            animation: 0.6s ease 0s 1 slideUpImg;
+            animation-fill-mode: forwards;
+        }
+        #main-categories-wrap .land-backing{
+            height: 70px;
+            width: 100px;
+            position: absolute;
+            bottom: 0;
+            background-color:#63CF97;
+            z-index: 10;
+            display: none;
+        }
+        #main-categories-wrap .bottom-water-bar{
+            height: 16px;
+            width: 100%;
+        }
+        #main-categories-wrap .lighthouse-img-wrap{
+            margin: auto;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        #main-categories-wrap .lighthouse-img-wrap img{
+            position: absolute;
+            bottom: -9px;
+            right: 0;
+            z-index: 110;
+        }        
+        img{
+            margin-bottom: 1em;
+            border: 0;
+        }
+        .top-widgets-reveal{
+            margin-bottom: 32px;
+        }
+        .site-footer{
+            background-color: forestgreen;
+            color: #fff;
+            font-size: 16px;
+            padding: 1em;
+            letter-spacing: 1px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 280px;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: left top;
+            z-index: 1000;
+            transition: all 1s ease-in;
+        }
+        .site-footer .info-wrap{
+            text-align: right;
+            margin: 0 auto;
+            margin-top: 16px;
+            color: #f7f7f7;
+        }
+        .site-footer .info-wrap .made-with{
+            color: #f7f7f7;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .site-footer .info-wrap .fa-heart{
+            color: crimson!important;
+            animation: grow 1s 0s infinite;
+        }
+        .fb_iframe_widget{
+            display: inline-block;
+            position: relative;
+        }  
+        .fb_iframe_widget iframe{
+            position: absolute;
+        }
+        embed, iframe, object{
+            max-width: 100%;
+        }
+        .fb_iframe_widget span{
+            display: inline-block;
+            position: relative;
+            text-align: justify;
+        }
+        .site-footer .footer-links{
+            margin-top: 34px;
+            color: crimson;
+        }
+        .site-footer .footer-links .link{
+            margin-bottom: 12px;
+        }
+        .site-footer .footer-links .link a{
+            color: inherit;
+            opacity: 0.6;
+            transition: opacity 0.2s ease-in;
+        }
+    </style>
+</head>
+<body class="home page-template page-template-templates page-template-template-fullwidth page-template-templatestemplate-fullwidth-php page page-id-41 group-blog">
+    <script src="https://embed.small.chat/T7QEQN875G8XE5BGPN.js" async=></script>
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '237026343492048',
+            xfbml      : true,
+            version    : 'v2.10'
+          });
+          FB.AppEvents.logPageView();
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <header id="masthead" role="banner">
+        <!--<nav class="navbar lh-nav-bg-transform navbar-default navbar-fixed-top navbar-left" role="navigation">-->
+        <div class="site-header">
+          <div class="site-header-inner">
+            <div class="container header-container">
+              <div class="row">
+                <div class="col-md-12">
+              <div class="site-branding">
+                <a class="home-link" href="https://novicedock.com/" title="NoviceDock" rel="home">
+                 <img class="site-logo" src="https://novicedock.com/wp-content/themes/lighthouse/images/logo-white.svg" alt="NoviceDock">
+                </a>
+                <a class="topics-btn active">Topics <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+             </div>
+        <!--.site-branding-->
+                </div>
+              </div>
+           </div> 
+        <!-- .header-container -->
+        </div> 
+        <!-- inner header -->
+       </div>
+       <!--.site-header-->
+  </header>
+  <!--Categories Menu-->
+  <div class="container menu-container">
+    <div class="category-menu-wrap">
+      <div class="item-wrap">
+        <div class="top-widgets">
+            <h2 id="15"><span>Computer Science</span>
+             <a class="expand">+</a>
+           </h2>
+           <ul class="menu">
+         <div class="topic-card">
+            <a href="https://novicedock.com/learn/./computer-science/android-development">Android Development</a>
+            </div>  
+        <div class="topic-card">
+        <a href="https://novicedock.com/learn/./computer-science/build-a-pc">Build a PC</a>
+            </div>          
+            <div class="topic-card">
+            <a href="https://novicedock.com/learn/./computer-science/game-dev-art">Game Dev Art</a>
+            </div>      
+        <div class="topic-card">
+        <a href="https://novicedock.com/learn/./computer-science/ios-development">iOS Development</a>
+        </div>             
+        <div class="topic-card">
+        <a href="https://novicedock.com/learn/./computer-science/unity-game-engine">Unity Game Engine</a>
+        </div>              
+            <div class="topic-card">
+                <a href="https://novicedock.com/learn/./computer-science/web-development">Web Development</a>
+                 </div>       
+             <div class="topic-card coming-soon">
+                   Computer Architecture
+                 </div>       
+            <div class="topic-card coming-soon">
+                   Cryptocurrency
+                 </div>                   
+            <div class="topic-card coming-soon">
+                   Artificial Intelligence  
+               </div>
+           </ul>
+         </div> <!-- end top-widgets -->
+            <div class="top-widgets">
+        <h2 id="51"><span>Cryptocurrency</span>
+         <a class="expand">+</a>
+    </h2>
+        <ul class="menu">    
+        <div class="topic-card">
+        <a href="https://novicedock.com/learn/./cryptocurrency/ethereum">Ethereum</a>
+        </div>                
+    <div class="topic-card">
+        <a href="https://novicedock.com/learn/./cryptocurrency/monero">Monero</a>
+        </div>               
+    <div class="topic-card">
+        <a href="https://novicedock.com/learn/./cryptocurrency/stellar">Stellar</a>
+        </div>                
+    <div class="topic-card coming-soon">
+         Cardano             
+    </div>                   
+         <div class="topic-card coming-soon">
+                   Iota            
+     </div>                    
+    <div class="topic-card coming-soon">
+                   RaiBlocks
+        </div>                
+    <div class="topic-card coming-soon">
+        Ripple     
+     </div>                    
+    <div class="topic-card coming-soon">
+           Lisk 
+     </div>
+</ul>
+     </div>
+      <!-- end top-widgets -->
+    <div class="top-widgets">
+        <h2 id="35"><span>Business</span>
+         <a class="expand">+</a>
+       </h2>
+        <ul class="menu">     
+    <div class="topic-card">
+        <a href="https://novicedock.com/learn/./business/intro-to-marketing">Intro to Marketing</a>
+     </div>                    
+    <div class="topic-card coming-soon">
+        Intro to Entrepreneurship 
+     </div>
+   </ul>
+     </div> 
+     <!-- end top-widgets -->
+    <div class="top-widgets">
+        <h2 id="46"><span>Natural Sciences</span>
+         <a class="expand">+</a>
+           </h2>
+           <ul class="menu">  
+        <div class="topic-card">
+            <a href="https://novicedock.com/learn/./natural-sciences/organic-chemistry-1">Organic Chemistry 1</a>
+         </div>                
+        <div class="topic-card coming-soon">
+                   Physics 1
+        </div>                
+        <div class="topic-card coming-soon">
+                   Physics 2
+        </div>
+        </ul>
+        </div> 
+        <!-- end top-widgets -->
+    <div class="top-widgets">
+        <h2 id="63"><span>Influencers</span>
+         <a class="expand">+</a>
+        </h2>
+    <ul class="menu">         
+        <div class="topic-card">
+            <a href="https://novicedock.com/learn/./influencers/naval">Naval Ravikant Periscope Q&amp;A</a>
+        </div>                
+    <div class="topic-card">
+        <a href="https://novicedock.com/learn/./influencers/naval-ravikant-periscope-2">Naval Ravikant Periscope #2</a>
+    </div>
+    </ul>
+         </div> <!-- end top-widgets -->
+            <div class="top-widgets">
+                  <h2 id="11"><span>Language</span>
+             <a class="expand">+</a>
+           </h2>
+    <ul class="menu">             
+        <div class="topic-card">
+            <a href="https://novicedock.com/learn/./language/hindi">Hindi</a>
+        </div>
+    </ul>
+        </div> <!-- end top-widgets -->
+        </div>
+    </div>
+    </div>
+    <div class="darken"></div>
+    <div id="page" class="hfeed site">
+        <div id="content" class="site-content">
+            <div id="main-categories-wrap">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 homepage-widget-wrap">
+                        <div class="categories-container">
+                            <div class="item"><span style="color:#78d9af">1</span>Pick a topic to learn</div>    
+                                <div class="item"><span style="color:#eaaa70">2</span>Get a curated syllabus</div>
+                                    <div class="item"><span style="color:#78c2d9">3</span>Get awesome resources</div>
+                </div>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end container -->
+        <div class="back-mountains" style="bottom: -2.4px;"></div>
+        <div class="land-backing"></div>
+        <div class="bottom-water-bar"></div>
+        <div class="mountain-close" style="bottom: -0.12px;"></div>
+        <div class="container lighthouse-img-wrap">
+            <img src="https://novicedock.com/wp-content/themes/lighthouse/images/lighthouse.png">
+        </div>
+        </div>      
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 homepage-categories-wrap">
+        <!--<h4> <span class="text">All Topics</span>
+            <div class="view-type-wrap">
+            <a href="#" class="layout-condensed">
+            <span></span><span></span><span></span>
+            </a>
+            <a href="#" class="layout-large">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </a>
+            </div>
+            </h4>-->              
+    <div class="top-widgets top-widgets-reveal">
+    <h2 id="15"><span>Computer Science</span>
+    </h2>
+<ul class="menu">
+<li class="menu-item">
+<a href="https://novicedock.com/learn/./computer-science/android-development">
+<div class="topic-card ">
+    <h3>Android Development</h3>
+        </div>
+        </a>
+        </li>
+    <li class="menu-item">
+    <a href="https://novicedock.com/learn/./computer-science/build-a-pc">
+        <div class="topic-card ">
+            <h3>Build a PC</h3>
+            </div>
+        </a>
+        </li>
+    <li class="menu-item">
+<a href="https://novicedock.com/learn/./computer-science/game-dev-art">
+<div class="topic-card ">
+        <h3>Game Dev Art</h3>
+</div>
+        </a>
+        </li>
+    <li class="menu-item">
+        <a href="https://novicedock.com/learn/./computer-science/ios-development">
+            <div class="topic-card ">
+                <h3>iOS Development</h3>
+            </div>
+        </a>
+    </li>
+             <li class="menu-item">
+                <a href="https://novicedock.com/learn/./computer-science/unity-game-engine">
+                    <div class="topic-card ">
+                        <h3>Unity Game Engine</h3>
+                            </div>
+                            </a>
+                                </li>
+                                    <li class="menu-item">
+                            <a href="https://novicedock.com/learn/./computer-science/web-development">
+                        <div class="topic-card ">
+                    <h3>Web Development</h3>
+                        </div>
+                        </a>
+                    </li>
+                <li class="menu-item">
+            <div class="topic-card coming-soon">
+        <h3>Computer Architecture</h3>
+        <span>2021</span>
+            </div>
+                </li>
+            <li class="menu-item">
+        <div class="topic-card coming-soon">
+            <h3>Cryptocurrency</h3>
+                <span>Early 2021</span>
+                    </div>
+                        </li>
+                                <li class="menu-item">
+                                        <div class="topic-card coming-soon">
+                                                <h3>Artificial Intelligence</h3>
+                                                <span>2021</span>
+                                            </div>
+                                                </li>
+                                            </ul>
+                    </div> <!-- end top-widgets -->
+                            <div class="top-widgets top-widgets-reveal">
+                                        <h2 id="51"><span>Cryptocurrency</span>
+                        </h2>
+                        <ul class="menu">
+                                <li class="menu-item">
+                        <a href="https://novicedock.com/learn/./cryptocurrency/ethereum">
+                            <div class="topic-card ">
+                            <h3>Ethereum</h3>
+                                 </div>
+                                </a>
+                            </li>
+                        <li class="menu-item">
+                            <a href="https://novicedock.com/learn/./cryptocurrency/monero">
+                                <div class="topic-card ">
+                                    <h3>Monero</h3>
+                            </div>
+                                </a>
+                              </li>
+                         <li class="menu-item">
+                    <a href="https://novicedock.com/learn/./cryptocurrency/stellar">
+                        <div class="topic-card ">
+                <h3>Stellar</h3>
+                    </div>
+                        </a>
+                </li>
+        <li class="menu-item">
+    <div class="topic-card coming-soon">
+            <h3>Cardano</h3>
+        <span>TBA</span>
+            </div>
+        </li>
+            <li class="menu-item">
+                <div class="topic-card coming-soon">
+            <h3>Iota</h3>
+                <span>TBA</span>
+        </div>
+            </li>
+    <li class="menu-item">
+        <div class="topic-card coming-soon">
+            <h3>RaiBlocks</h3>
+                <span>TBA</span>
+                    </div>
+                        </li>
+                             <li class="menu-item">
+                                <div class="topic-card coming-soon">
+                        <h3>Ripple</h3>
+                        <span>TBA</span>
+                    </div>
+                </li>
+                            <li class="menu-item">
+                    <div class="topic-card coming-soon">
+                <h3>Lisk</h3>
+                        <span>TBA</span>
+                     </div>
+                 </li>
+            </ul>
+                </div> <!-- end top-widgets -->
+                        <div class="top-widgets top-widgets-reveal">
+                            <h2 id="35"><span>Business</span>
+                        </h2>
+                        <ul class="menu">
+                            <li class="menu-item">
+                        <a href="https://novicedock.com/learn/./business/intro-to-marketing">
+                            <div class="topic-card ">
+                                <h3>Intro to Marketing</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        <li class="menu-item">
+                    <div class="topic-card coming-soon">
+                <h3>Intro to Entrepreneurship</h3>
+                    <span>Summer 2021</span>
+                            </div>
+                        </li>
+                            </ul>
+                    </div> 
+                    <!-- end top-widgets -->
+                <div class="top-widgets top-widgets-reveal">
+            <h2 id="46"><span>Natural Sciences</span>
+                </h2>
+                    <ul class="menu">
+                        <li class="menu-item">
+                    <a href="https://novicedock.com/learn/./natural-sciences/organic-chemistry-1">
+                        <div class="topic-card ">
+                            <h3>Organic Chemistry 1</h3>
+                                </div>
+                        </a>
+                    </li>
+                <li class="menu-item">
+                    <div class="topic-card coming-soon">
+                        <h3>Physics 1</h3>
+                            <span>Summer 2021</span>
+                                </div>
+                            </li>
+                        <li class="menu-item">
+                            <div class="topic-card coming-soon">
+                    <h3>Physics 2</h3>
+                <span>Jan 2021</span>
+            </div>
+        </li>
+        </ul>
+            </div>
+             <!-- end top-widgets -->
+            <div class="top-widgets top-widgets-reveal">
+                <h2 id="63"><span>Influencers</span>
+                    </h2>
+                    <ul class="menu">
+                <li class="menu-item">
+                    <a href="https://novicedock.com/learn/./influencers/naval">
+                    <div class="topic-card ">
+                        <h3>Naval Ravikant Periscope Q&amp;A</h3>
+                        </div>
+                    </a>
+                </li>
+             <li class="menu-item">
+            <a href="https://novicedock.com/learn/./influencers/naval-ravikant-periscope-2">
+                 <div class="topic-card ">
+                  <h3>Naval Ravikant Periscope #2</h3>
+                    </div>
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- end top-widgets -->
+                <div class="top-widgets top-widgets-reveal">
+                    <h2 id="11"><span>Language</span>
+                    </h2>
+                <ul class="menu">
+                    <li class="menu-item">
+             <a href="https://novicedock.com/learn/./language/hindi">
+                    <div class="topic-card ">
+                       <h3>Hindi</h3>
+                    </div>
+                        </a>
+                </li>
+                    </ul>
+                </div> 
+            <!-- end top-widgets -->      
+                </div> 
+            <!-- homepage-widget-wrap -->
+            </div>
+        </div>
+         <!-- end container -->
+        </div> 
+        <!-- end content -->        
+        <div class="container">
+        <div class="row">
+            <div id="primary" class="">
+            <main id="main" class="site-main" role="main">     
+        </main>
+        <!-- #main -->
+        </div><!-- #primary -->   
+                    </div> 
+                    <!--.row-->
+                </div>
+                <!--.container-->              
+        <div class="footer-widget-wrapper">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-4">
+                    </div>
+                <div class="col-md-4">
+            </div>
+        <div class="col-md-4">
+    </div>
+    </div>
+        </div>
+    </div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="row info-wrap container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="made-with">
+                    Made With 
+                    <i class="fa fa-heart" aria-hidden="true">
+                    </i>
+                     For The Mind
+                    </div>
+                    <div class="fb-like fb_iframe_widget" data-href="https://facebook.com/novicedock" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=237026343492048&amp;container_width=960&amp;href=https%3A%2F%2Ffacebook.com%2Fnovicedock&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;size=small"><span style="vertical-align: bottom; width: 60px; height: 28px;"><iframe name="f3aa6a103c23c2c" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://web.facebook.com/v2.10/plugins/like.php?action=like&amp;app_id=237026343492048&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df3312bee64b7c58%26domain%3Dnovicedock.com%26origin%3Dhttps%253A%252F%252Fnovicedock.com%252Ff8551c5d7d45d8%26relation%3Dparent.parent&amp;container_width=960&amp;href=https%3A%2F%2Ffacebook.com%2Fnovicedock&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;size=small" style="border: none; visibility: visible; width: 60px; height: 28px;" class=""></iframe></span></div>
+                    <div class="footer-links">
+                <div class="link"><a href="https://github.com/NoviceDock/NoviceDock-Wiki" target="_blank">About</a></div>
+            <div class="link"><a href="https://github.com/NoviceDock/NoviceDock-Wiki/blob/master/contribute.md" target="_blank">Write for us!</a></div>
+        <div class="link"><a href="https://github.com/NoviceDock/NoviceDock-Wiki/blob/master/jobs.md" target="_blank">Jobs</a></div>
+            <div class="link"><a href="https://novicedock.com/contact">Contact</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- .site-info -->
+</footer>
+<!-- #colophon -->
+ </div>
+</body>
+</html>

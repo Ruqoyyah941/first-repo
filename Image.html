@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Javascript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .imgStyle{
+            height: 100px;
+            width: 100px;
+            border: 3px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready (function () {
+            $('#divContainer img').on({
+                mouseover: function () {
+                    $(this).css({
+                        'cursor': 'pointer',
+                        'border-color': 'red'
+                    });
+                },
+                mouseout: function () {
+                    $(this).css({
+                        'cursor': 'default',
+                        'border-color': 'grey'
+                    });
+                },
+                click: function() {
+                    var imageUrl = $(this).attr('src');
+                    $('#mainImage').attr('src', imageUrl);
+                }
+            });
+        });
+    </script>
+    <img id="mainImage" height="500" width="540" style="border: 3px solid grey;" src="Image Gallery1.jpg"/>
+    <br/>
+    <div id="divContainer">
+        <img src="Image Gallery1.jpg" class="imgStyle"/>
+        <img src="Image Gallery2.jpg" class="imgStyle"/>
+        <img src="Image Gallery3.jpg" class="imgStyle"/>
+        <img src="Image Gallery4.jpg" class="imgStyle"/>
+        <img src="flower2.jpg" class="imgStyle"/>
+    </div>
+</body>
+</html>

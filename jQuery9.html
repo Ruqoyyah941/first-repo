@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap and unwrap elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .containerDiv{
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('div').wrap('<div class="containerDiv"></div>')
+        });
+    </script>
+    <div id="div1">DIV 1</div>
+    <div id="div2">DIV 2</div>
+    <div id="div3">DIV 3</div>
+
+    To unwrap means to remove the parent element and in this example, the parent element is the containerDiv as shown in the console
+    So to unwrap, use $('div').unwrap (close the wrapped with a semi-colon and unwrap)
+<br/><br/>
+    WrapAll wraps all the html elements with the specified element together as one while wrap wraps each element one by one
+<br/><br/>
+    WrapInner wraps the html element with the intended element but puts it in the middle unlike wrap that makes it the parent element 
+</body>
+</html>

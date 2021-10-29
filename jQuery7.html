@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+    <script>
+        $(document).ready(function(){
+            var employeeJSON = {
+                "firstName": "Todd",
+                "lastName": "Grover",
+                "gender": "Male",
+                "salary": 50000
+            };
+            var result = '';
+            result += 'First Name = ' + employeeJSON.firstName + '<br/>';
+            result += 'Last Name = ' + employeeJSON.lastName + '<br/>';
+            result += 'Gender = ' + employeeJSON.gender + '<br/>';
+            result += 'Salary = ' + employeeJSON.salary + '<br/>';
+            $('#divResult').html(result);
+        });
+        </script>
+    <div id="divResult"></div>
+</body>
+</html>

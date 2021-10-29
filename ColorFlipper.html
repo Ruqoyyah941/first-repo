@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <style>
+        body {
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+nav {
+  height: 3rem;
+  display: grid;
+  align-items: center;
+}
+.nav-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-center h4 {
+  margin-bottom: 0;
+}
+.nav-links {
+  display: flex;
+}
+nav a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+nav a:hover {
+  color: red;
+}
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+}
+.container h2 {
+  background: grey;
+  color: white;
+  padding: 1rem;
+  border-radius: border-box;
+  margin-bottom: 2.5rem;
+  text-transform: capitalize;
+}
+.color {
+  color: blue;
+}
+.btn-hero {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  background: transparent;
+  color: black;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(182, 126, 126, 0.2);
+  border-radius: border-box;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+.btn-hero:hover {
+  color: white;
+  background: black;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-center ">
+            <h4>color flipper</h4>
+            <ul class="nav-links">
+                <li>
+                    <a href="ColorFlipper.html">simple</a>
+                </li>
+                <li>
+                    <a href="hex.html">hex</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>background color : <span class="color">
+                #f1f5f8
+            </span></h2>
+            <button class="btn btn-hero" id="btn">click me</button>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

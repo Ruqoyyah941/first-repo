@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes from freecode camp</title>
+</head>
+<body>
+    <form action="/url-where-you-want-to-submit-form-data">
+        <input>
+      </form>
+      <br/>
+      Radio buttons are needed when only one option is required to be chosen. Typical radio button:
+      <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    they must have the same name attribute to be in the same group, so that only one can be chosen by the user<br>
+      Checkboxes allow more than one answer to be chosen
+
+      to create a round image, set the border-radius of the image to 50%
+
+      id is of higher importance that class. so if an element has both wih conflicting styles, that of the id will be executed
+
+    Use Clockwise Notation to Specify the Margin of an Element
+        Instead of specifying an element's margin-top, margin-right, margin-bottom, and margin-left properties individually, you can specify
+     them all in one line, like this:
+                margin: 10px 20px 10px 20px;
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific margin instructions.
+<br/><br/>
+Another example of form with radio buttons
+<form>
+    <fieldset>
+      <legend>Choose one of these three items:</legend>
+      <input id="one" type="radio" name="items" value="one">
+      <label for="one">Choice One</label><br>
+      <input id="two" type="radio" name="items" value="two">
+      <label for="two">Choice Two</label><br>
+      <input id="three" type="radio" name="items" value="three">
+      <label for="three">Choice Three</label>
+    </fieldset>
+  </form>
+  <br/>
+  Date picker:
+  <label for="input1">Enter a date:</label>
+<input type="date" id="input1" name="input1">
+<br/>
+Date time:
+<p>Master Camper Cat officiated the cage match between Goro and Scorpion <time datetime="2013-02-13">last Wednesday</time>, which ended in a draw.</p>
+<br/>
+Media Queries consist of a media type, and if that media type matches the type of device the document is displayed on, the styles are applied. You can have as many selectors and styles inside your media query as you want.
+
+Here's an example of a media query that returns the content when the device's width is less than or equal to 100px:
+
+@media (max-width: 100px) { /* CSS Rules */ }
+and the following media query returns the content when the device's height is more than or equal to 350px:
+
+@media (min-height: 350px) { /* CSS Rules */ }
+Remember, the CSS inside the media query is applied only if the media type matches that of the device being used.
+</body>
+</html>

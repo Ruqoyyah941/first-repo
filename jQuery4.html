@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selected selector</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#selectCountries').change(function(){
+            var selectedOptions = $('#selectCountries option:selected');
+            if(selectedOptions.length > 0)
+            {
+                var resultString = '';
+                selectedOptions.each(function(){
+                    resultString+= "Value =" + $(this).val() + ", Text = " + $(this).text() + "<br/>";
+                });
+            $('#divResult').html(resultString);
+            }
+          });
+        });
+    </script>
+    Country:
+    <select id="selectCountries" multiple="multiple">
+        <option value="USA">United States</option>
+        <option value="IND">India</option>
+        <option value="UK">United Kingdom</option>
+        <option value="CA">Canada</option>
+        <option value="AU">Australia</option>
+    </select>
+    <br/><br/>
+    <div id="divResult"></div>
+</body>
+</html>

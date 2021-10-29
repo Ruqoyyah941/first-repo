@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Page</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: grey;
+            color: aliceblue;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        h4{
+            letter-spacing: 3px;
+            text-transform: capitalize;
+            line-height: 1.25;
+            margin-bottom: 0.75rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p{
+            margin-bottom: 1.25rem;
+            color: grey;
+        }
+        .section{
+            padding: 5rem 0;
+        }
+        .section-center{
+            width: 90vw;
+            margin: 0 auto;
+            max-width: 1170px;
+        }
+        main{
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .title{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .underline{
+            height: 0.25rem;
+            width: 40%;
+            background: pink;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container{
+            width: 80vw;
+        }
+        .review{
+            background: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+        .img-container{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+        }
+        #person-img{
+            width: 100%;
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            position: relative;
+        }
+        .img-container::after{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 900;
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: teal;
+            color: white;
+        }
+        .img-container::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: -0.25rem;
+            right: -0.5rem;
+            border-radius: 50%;
+        }
+        #author{
+            margin-bottom: 0.25rem;
+            color: black;
+        }
+        #job{
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            color: red;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+        #info{
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+        .prev-btn, .next-btn{
+            color: aquamarine;
+            font-size: 1.25rem;
+            background: transparent;
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+        .prev-btn:hover,
+        .next-btn:hover{
+            color: blanchedalmond;
+        }
+        .random-btn{
+            margin-top: 0.5rem;
+            background: brown;
+            color: azure;
+            padding: 0.25rem 0.5rem;
+            text-transform: capitalize;
+            border-color: black;
+            cursor: pointer;
+        }
+        .random-btn:hover{
+            background: greenyellow;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h2>What We Do In Home Of Bradley</h2>
+        <div class="underline"></div>
+    </div>
+    <!--review-->
+    <article class="review">
+        <div class="img-container">
+            <img src="Cake Image.jpg" alt="" id="person-img"/>
+        </div>
+        <h4 id="author">Cake Image</h4>
+        <p id="job">My cake</p>
+        <p id="info">A party without a cake is just a meeting because
+            every cake has a story to tell.
+            Cakes and confectioneries are one of the things we handle 
+            here in Home Of Bradley. 
+        </p>
+        <!--prev next buttons-->
+        <div class="button-container">
+            <button class="prev-btn">
+                <i style="font-size: 30px;" class="fa fa-angle-left"></i>
+            </button>
+            <button class="next-btn">
+                <i style="font-size: 30px;" class="fa fa-angle-right"></i>
+            </button>
+        </div>
+        <!-- random button -->
+        <button class="random-btn">surprise me</button>
+    </article>
+    <script src="description.js"></script>
+</body>
+</html>

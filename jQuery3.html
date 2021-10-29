@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox text with value</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        $(document).ready(function(){       
+            $('input[name="skills"]').click(function(){
+                getCheckedCheckBoxes('skills');
+        });
+            $('input[name="cities"]').click(function(){
+                getCheckedCheckBoxes('cities');
+        });
+         var getCheckedCheckBoxes = function(groupName)
+                {
+            var result = $('input[name="' + groupName + '"]:checked');
+            if(result.length > 0){
+                var resultString = result.length + "checkboxe(s) checked <br/>";
+                result.each(function ()
+                {
+                    var selectedValue = $(this).val();
+                    resultString += selectedValue + "-" + $('label[for="option-' + selectedValue + '"]').text() +"<br/>";
+                });
+                $('#div' + groupName).html(resultString);
+            }
+            else{
+                $('#div' + groupName).html("No checkbox checked");
+            }
+        }
+       });
+    </script>
+           Skills:
+    <input type="checkbox" name="skills" checked="checked" value="js"/>
+    <label for="option-js">Javascript</label>
+    <input type="checkbox" name="skills" checked="checked" value="jq"/>
+    <label for="option-jq">jQuery</label>
+    <input type="checkbox" name="skills" value="Cs"/>
+    <label for="option-Cs">C#</label>
+    <input type="checkbox" name="skills" value="vb"/>
+    <label for="option-vb">VB</label>
+    <br/><br/>
+            Preferred cities:
+    <input type="checkbox" name="cities" value="ny"/>
+    <label for="option-ny">New York</label>
+    <input type="checkbox" name="cities" value="nd"/>
+    <label for="option-nd">New Delhi</label>
+    <input type="checkbox" name="cities" value="Ln"/>
+    <label for="option-Ln">London</label>
+    <br/><br/>
+    <div id="divskills"></div>
+    <br/><br/>
+    <div id="divcities"></div>
+</body>
+</html>

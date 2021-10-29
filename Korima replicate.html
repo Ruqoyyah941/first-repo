@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korima replicate.com</title>
+    <a href="https//www.Korima.maltiv.com"></a>
+    <style>
+        * {
+         box-sizing: border-box;
+    }
+        .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    #header{
+        padding: 25px 0 0;
+    }
+    *, ::after{
+        box-sizing: border-box;
+    }
+    header{
+        display: block;
+    }
+    body{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.444;
+        position: relative;
+    }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: relative;
+    }
+    .container:before,
+    .container:after{
+        content: '.';
+        display: block;
+        font-size: 0;
+        height: 0;
+        line-height: 0;
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    .container:after{
+        clear: both;
+    }
+    #header .header-flex{
+        align-items: center;
+        display: flex;
+        padding: 0;
+        position: relative;
+    }
+    .header-flex
+    .header-column.left{
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+    .header-column.right{
+        justify-content: flex-end;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+    .header-flex
+    .header-column{
+        display: flex;
+        position: relative;
+        width: auto;
+        height: 40px;
+    }
+    .navbar-brand{
+        align-items: center;
+        display: flex;
+        margin-right: 5%;
+    }
+    .navbar-brand
+    .navbar-title{
+        margin-right: 3rem;
+    }
+    .navbar-brand
+    .navbar-title h1{
+        font-size: 22px;
+        letter-spacing: 5px;
+        line-height: 1;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    h1{
+        text-rendering: optimizeLegibility;
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    a{
+        text-decoration: none;
+        color: #111;
+        text-decoration-style: initial;
+        background-color: transparent;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+        transition: all .3s;
+    }
+    a:-webkit-any-link{
+        cursor: pointer;
+    }
+    ul{
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    .navbar-menu{
+        font-size: 11px;
+        margin: 0;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .navbar-menu li{
+        display: inline-block;
+        margin: 0 20px 0 0;
+    }
+    .navbar-menu li a{
+        display: inline-block;
+        line-height: 32px;
+        vertical-align: middle;
+        color: #111;
+    }
+    .navbar-menu ul{
+        list-style-type: none;
+    }
+    .navbar-tools{
+        display: flex;
+        align-items: center;
+    }
+    .navbar-tools a{
+        background-color: transparent;
+        align-items: center;
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin-left: 20px;
+        text-transform: uppercase;
+        display: inline-flex;
+        color: #111;
+    }
+    .navbar-tools a.nav-signup{
+        margin-left: 35px;
+    }
+    .navbar-tools a.nav-signup svg{
+        margin-right: 10px;
+    }
+    .svg-icon-fill{
+        color: #111;
+        fill: currentColor;
+        stroke: none;
+        transition: none;
+    }
+    .svg-icon{
+        display: block;
+        height: 18px;
+        width: auto;
+        padding: 2.5px;
+    }
+    .mobile-menu-toggle
+    .mobile-search-toggle{
+        display: none;
+        visibility: hidden;
+    }
+    :not(svg){
+        transform-origin: 0px 0px;
+    }
+    svg:not(:root){
+        overflow: hidden;
+    }
+    .pagination
+    button.pagination-load{
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid #111;
+        display: flex;
+        height: 100%;
+        color: #111;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 1;
+        padding: 20px 3rem;
+        position: relative;
+        text-transform: uppercase;
+    }
+    button{
+        font-weight: 400;
+        height: 36px;
+        outline: 0;
+        padding: 20px 3rem;
+        text-align: center;
+        transition: all .3s ease;
+        font-family: inherit;
+        margin: 0;
+        text-rendering: auto;
+        word-spacing: normal;
+        text-indent: 0px;
+        text-shadow: none;
+        cursor: default;
+        font: 400 13px sans-serif;
+    }
+    .pagination
+    button.pagination-load span::before{
+        transform: rotate(45deg);
+        left: 2.5px;
+    }
+    .pagination
+    button.pagination-load span::after{
+        transform: rotate(45deg);
+        right: 2.5px;
+    }
+    .pagination
+    button.pagination-load span::after,
+    .pagination button.pagination-load span::before{
+        content: "";
+        width: 6px;
+        height: 1px;
+        background: #111;
+        position: absolute;
+        top: 50%;
+    }
+    ::selection{
+        background: #0058ff;
+        color: #fff;
+        text-shadow: none;
+    }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-flex">
+                <div class="header-column left">
+                    <div class="navbar-brand">
+                        <div class="navbar-title">
+                            <h1>
+                                <a href="https://korima.maltiv.com">Korima</a>
+                            </h1>
+                            <p class="navbar-description"></p>
+                        </div>
+                        <nav class="navbar-menu">
+                            <ul class="nav nav-list">
+                                <li class="nav-list-item nav-home nav-current">
+                                    <a href="https://korima.maltiv.com/">home</a>
+                                </li>
+                                <li class="nav-list-item nav-features">
+                                    <a href="https://korima.maltiv.com/features">features</a>
+                                </li>
+                                <li class="nav-list-item nav-changelog">
+                                    <a href="https://korima.maltiv.com/changelog/">changelog</a>
+                                </li>
+                                <li class="nav-list-item nav-support">
+                                    <a href="https://korima.maltiv.com">support</a>
+                                </li>
+                                <li class="nav-list-item nav-get-theme">
+                                    <a href="https://themeforest.net/item/korima-multipurpose-ghost-blog-theme/26386146">get theme</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-column right">
+                    <div class="navbar-tools">
+                        <a class="nav-signin" href="/signin/">sign in</a>
+                        <a class="nav-signup" href="/signup/">
+                        <svg class="svg-email svg-icon svg-icon-fill" xmlns="http://w3.org/2000/svg" viewBox="0 0 512 402.29">
+                        <path d="M24,36.5714286 C48.8754286,36.5714286 36.5714286,48.8754286 36.5714286,64 L36.5714286,338.285714 C36.5714286,353.409143 48.8754286,365.714286 64,365.714286 L448,365.714286 C463.123429,365.714286 475.428571,353.409143 475.428571,338.285714 L475.428571,64 C475.428571,48.8754286 463.123429,36.5714286 448,36.5714286 L64,36.5714286 Z M448,402.285714 L64,402.285714 C28.7108571,402.285714 0,373.576 0,338.285714 L0,64 C0,28.7108571 28.7108571,0 64,0 L448,0 C483.290286,0 512,28.7108571 512,64 L512,338.285714 C512,373.576 483.290286,402.285714 448,402.285714 L448,402.285714 Z M256,237.714286 C252.037714,237.714286 248.075429,236.430857 244.773714,233.862857 L80.2022857,105.861714 C72.2308571,99.6628571 70.7942857,88.1737143 76.9954286,80.2022857 C83.1954286,72.232 94.6834286,70.7942857 102.654857,76.9954286 L256,196.262857 L409.345143,76.9954286 C417.315429,70.7965714 428.805714,72.2308571 435.005714,80.2022857 C441.205714,88.1737143 439.769143,99.6628571 431.797714,105.861714 L267.226286,233.862857 C263.925714,236.430857 259.962286,237.714286 256,237.714286"></path>
+                        </svg>
+                        subscribe
+                        </a>
+                        <a href="#" class="nav-darkmode js-darkmode-toogle">
+                            <svg class="svg-darkmode svg-icon svg-icon-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M435.5,74.7A255.1,255.1,0,0,0,0,255.1,255,255,0,0,0,255.1,510.2,255.1,255.1,0,0,0,435.5,74.7ZM255.1,473.8V36.4c120.6,0,218.7,98.1,218.7,218.7S375.7,473.8,255.1,473.8Z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="nav-search js-search-toggle">
+                            <svg class="svg-search svg-icon svg-icon-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M506,474.903251 L363.6,331.579608 C391.466667,296.745847 408.266667,252.605355 408.266667,204.609219 C408.266667,92.2636912 316.933333,1.19068968 204.133333,1.19068968 C91.3333333,1.19068968 0,92.3966445 0,204.742172 C0,317.087699 91.3333333,408.160701 204.133333,408.160701 C252.933333,408.160701 297.6,391.14268 332.8,362.690677 L474.266667,505.083647 C478.533333,509.604059 484.4,511.864265 490.133333,511.864265 C495.6,511.864265 501.066667,509.869966 505.2,505.881367 C514,497.50531 514.266667,483.678168 506,474.903251 Z M204.133333,364.41907 C161.333333,364.41907 121.066667,347.799909 90.8,317.619513 C60.5333333,287.439116 43.8666667,247.287224 43.8666667,204.742172 C43.8666667,162.064167 60.5333333,121.912274 90.8,91.8648314 C121.066667,61.6844352 161.333333,45.0652744 204.133333,45.0652744 C246.933333,45.0652744 287.2,61.6844352 317.466667,91.8648314 C347.733333,122.045228 364.4,162.19712 364.4,204.742172 C364.4,247.420177 347.733333,287.57207 317.466667,317.619513 C287.2,347.799909 246.933333,364.41907 204.133333,364.41907 Z"></path>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-3">
+            <figure>
+                <img src="Korima 2.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption><strong>A little improvement each day <br> makes a big difference over time</strong><br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. 
+                        <br>
+                        <br>
+                        April 11, 2020 - 2 min read
+                    </figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="Korima 3.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption>
+                    <strong>Imagine the people you can <br>truly help by living your best life</strong><br>
+        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. 
+        <br>
+        <br>
+         April 11, 2020 - 2 min read
+        </figcaption>
+    </figure>
+    </div>
+    <div class="column">
+        <figure>
+            <img src="Korima 4.jpg" alt="A book" style="width: 110%; height: 420px;">
+            <figcaption>
+            <strong>Nothing in this world is <br> impossible to a willing heart</strong>
+            <br>
+            <br>
+            Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. 
+            <br>
+            <br>
+            April 11, 2020 - 2 min read
+            </figcaption>
+        </figure>
+    </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="Korima 5.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption><strong>A bad habit has a unique detrimental effect on your life</strong>
+                        <br>
+                        <br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. 
+                        <br>
+                        <br>
+                        April 11, 2020 - 2 min read
+                    </figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="Korima 6.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption>
+                    <strong>The only true wisdom is knowing that you know nothing</strong>
+                    <br>
+                    <br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. 
+        <br>
+        <br>
+         April 11, 2020 - 2 min read
+        </figcaption>
+    </figure>
+    </div>
+    <div class="column">
+        <figure>
+            <img src="Korima 7.jpg" alt="A book" style="width: 110%; height: 420px;">
+            <figcaption>
+            <strong>The only true wisdom is knowing that you know nothing</strong>
+            <br>
+            <br>
+                Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. Vici co 
+            <br>
+            <br>
+            April 11, 2020 - 2 min read
+            </figcaption>
+        </figure>
+    </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="Korima 8.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption><strong>Learning is a weightless treasure you can carry easily</strong>
+                        <br>
+                        <br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. Vici consequa 
+                        <br>
+                        <br>
+                        April 11, 2020 - 2 min read
+                    </figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="Korima 9.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption>
+                    <strong>Before anything else, preparation is the key to success</strong>
+                    <br>
+                    <br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. 
+        <br>
+        <br>
+         April 11, 2020 - 2 min read
+        </figcaption>
+    </figure>
+    </div>
+    <div class="column">
+        <figure>
+            <img src="Korima 10.jpg" alt="A book" style="width: 110%; height: 420px;">
+            <figcaption>
+            <strong>Look for opportunities in every change in your life</strong>
+            <br>
+            <br>
+                Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. Vici co 
+            <br>
+            <br>
+            April 11, 2020 - 2 min read
+            </figcaption>
+        </figure>
+    </div>
+    </div>
+    <div class="pagination">
+        <button class="pagination-load js-page-load" data-href="/page/2/">
+        Load More
+        <span></span>
+        </button>
+    </div>
+    <div class="row">
+        <div class="column">
+            <figure>
+                <img src="Korima 11.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption><strong>Mornings contain the secret to an extraordinarily successful life</strong>
+                        <br>
+                        <br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. Vici consequa 
+                        <br>
+                        <br>
+                        April 11, 2020 - 2 min read
+                    </figcaption>
+            </figure>
+        </div>
+        <div class="column">
+            <figure>
+                <img src="Korima 12.jpg" alt="A book" style="width: 110%; height: 420px;">
+                    <figcaption>
+                    <strong>There is no life as complete as the life that is lived by choice</strong>
+                    <br>
+                    <br>
+                        Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. 
+        <br>
+        <br>
+         April 11, 2020 - 2 min read
+        </figcaption>
+    </figure>
+    </div>
+    <div class="column">
+        <figure>
+            <img src="Korima 13.jpg" alt="A book" style="width: 110%; height: 420px;">
+            <figcaption>
+            <strong>The story you live and the identity you inhabit are always a choice
+            </strong>
+            <br>
+            <br>
+                Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor  pretium donec dictum. Vici co 
+            <br>
+            <br>
+            April 10, 2020 - 2 min read
+            </figcaption>
+        </figure>
+    </div>
+    </div>
+</body>
+</html>

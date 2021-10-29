@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCampProject5</title>
+    <style>
+        body{
+  background-color: teal;
+  line-height: 1.4;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background: cyan;
+  height: 50px;
+  padding-top: 20px;
+  margin-top: -25px;
+  margin-left: -10px;
+}
+#navbar{
+  position: fixed;
+  width: 100%
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+a:hover{
+  color: turquoise;
+  height: 100%;
+}
+@media (min-width: 320px) and (max-width: 480px){
+  #navbar{
+  background-color: cyan;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+#welcome-section{
+  box-sizing: border-box;
+  border: 0px solid black;
+  height: 100vh;
+  width: 100%
+}
+.center{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+h1{
+  padding-top: 80px;
+}
+h2{
+  font-size: 40px;
+  font-family: sans-serif;
+}
+span{
+  font-style: italic;
+  font-size: 60px;
+  color: #FFC0CB;
+}
+h3{
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  word-spacing: 10px;
+}
+.projects-grid{
+  display: flex;
+  justify-content: space-around;
+}
+.projects-grid img{
+  width: 250px;
+  height: 200px;
+  border: 5px solid pink;
+  border-radius: 20px;
+}
+.projects-grid img:hover{
+ opacity: 0.5;
+  transition: 0.7s;
+}
+#project-title{
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: -8px;
+  background-color: pink;
+}
+#project-title:hover{
+  color: white;
+}
+.projects-grid a:hover{
+  color: white;
+}
+#show-all{
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-left: 13em;
+  background-color: cyan;
+  border: 3px dashed pink;
+  border-radius: 8px;
+}
+#show-all:hover{
+  background-color: white;
+  color: teal;
+  border: 3px dashed cyan;
+}
+#reply-section{
+  color: white;
+  text-align: justify;
+  margin-left: 30px;
+  font-size: 25px;
+  font-style: italic;
+}
+#Contact img{
+  width: 250px;
+  height: 200px;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 30px;
+  margin-left: 35%;
+}
+#profile-link{
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+footer p{
+  background: cyan;
+  color: blue;
+  font: 1rem "Nunito Sans", sans-serif;
+  padding: 2rem;
+  margin-bottom: -10px;
+  margin-left: -7px;
+  margin-right: -7px;
+  text-align: center;
+  word-spacing: 0.2rem;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <nav id="navbar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#welcome-section">About</a>
+            </li>
+            <li>
+            <a class="nav-link" href="#projects">Work</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      <section class="welcome" id="welcome-section">
+        <div class="center">
+        <h1>Hi!</h1>
+        <h2>Welcome to my page,<br/>  My name is Ruqoyyah</h2>
+          <span>I'm a web designer...</span>
+        </div>
+      </section>
+      <section id="projects">
+       <h3 id="Project-header"> You might want to take a look at some of my projects, here they are:</h3>
+        <div class="projects-grid">
+          <a href="https://codepen.io/RuqoyyahKass/pen/ExWQybB" target="_blank" class="project-tile">
+            <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="First Project">
+            <p id="project-title">Tribute page</p>
+          </a>
+          <a href="https://codepen.io/RuqoyyahKass/pen/BaWrVOa" target="_blank" class="project-tile">
+            <img class="project-image" src="https://images.unsplash.com/photo-1554224155-1696413565d3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Second Project">
+            <p id="project-title">Code Camp Survey Form</p>
+          </a>
+          <a href="https://codepen.io/RuqoyyahKass/pen/WNpYQgW" target="_blank" class="project-tile">
+            <img class="project-image" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Third Project">
+            <p id="project-title">Technical Document</p>
+          </a>
+        </div>
+        <a href="https://codepen.io/your-work/" class="btn btn-show-all" id="show-all" target="_blank">Show all
+          </a>
+      </section>
+        <section id="Contact">
+          <p id="reply-section">I look forward to your reply on any of my platforms...</p>
+          <img src="https://images.unsplash.com/photo-1554895108-c7489915cac1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="Message me">
+          <a id="profile-link" href="https://github.com/Ruqoyyah941/first-repo" target="_blank" class="btn contact-details">
+            GitHub
+          </a>
+          <a id="profile-link" href="mailto:abolanlerukayat@gmail.com" target="_blank" class="btn contact-details">
+            Email Me
+          </a>
+      </section>
+      <footer>
+        <p>&copy; 2020 personal portfolio webpage project | Ruqqoyah Abolanle</p> 
+      </footer>
+    </main>
+</body>
+</html>

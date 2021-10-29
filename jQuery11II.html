@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove class in text box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .textBoxStyle{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('input[type="text"]').each(function(){
+             $(this).focus(function(){
+                 $(this).addClass('textBoxStyle');
+             });
+             $(this).blur(function(){
+                 $(this).removeClass('textBoxStyle');
+             })   
+            })
+        });
+    </script>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td><Input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><Input type="text"/></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <select>
+                    <option value="select">Please Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><Input type="text"/></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>each function</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('li').each(function (index) {
+                alert(index + " : " + $(this).text());
+            });
+        });
+    </script>
+    <ul>
+        <li>US</li>
+        <li>India</li>
+        <li>UK</li>
+        <li>Canada</li>
+        <li>Australia</li>
+    </ul>
+    This returns alert for the index and the text itself
+    If only the text is needed to be returned, index is removed from the jQuery code.
+
+    To break the each function, for examole to stop the alert after India, make this the jQuery code:
+    $(document).ready(function(){
+        $('li').each(function(){
+            if ($(this). text() == 'UK')
+            {
+                return false;
+            }
+            alert($this).text());
+        });
+    });
+</body>
+</html>

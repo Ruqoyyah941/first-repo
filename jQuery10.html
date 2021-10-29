@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append and prepend elements</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('div').append('<b> Tutorial </b>')
+        });
+    </script>
+    <div id="div1">jQuery</div>
+    <div id="div2">C#</div>
+    <div id="div3">ASP.NET</div>
+<br/><br/>
+    AppendTo does the same thing. The only difference is in the syntax. <br/><br/>
+    When using append, the element is specified first and what to append follows but in Append to, what to append comes first, then the
+     element follows. Usin the example above, AppendTo will be written as
+
+     $('<b> Tutorial </b>').appendTo($('div')); <br/><br/>
+
+     To prepend is the opposite of append and it means the word(s) prepended will come before the html unlike how it comes AFTER it in 
+     append. appendTo and prependTo works the same way
+</body>
+</html>

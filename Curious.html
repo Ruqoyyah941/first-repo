@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curious.justgoodthemes.com</title>
+    <style>
+        body, html{
+            height: 100%;
+        }
+        .site-branding a{
+            color: #111;
+            text-decoration: none;
+            background-color: transparent;
+            font-size: 30px;
+            border: 0;
+        }
+        .site-title{
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            line-height: 1.25;
+            text-rendering: optimizeLegibility;
+            text-transform: uppercase;
+            color: #666;
+        }
+        .site-navigation 
+        .menu-item{
+            display: inline-block;
+            font-size: 30px;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+            text-transform: uppercase;
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+        }
+        .site-navigation
+        .menu-item a{
+            color: #111;
+            padding: 7px 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+        }
+        a{
+            color: #111;
+            text-decoration: none;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+            background-color: transparent;
+        }
+        .menu, .actions{
+            list-style-position: initial;
+            list-style-image: initial;
+            list-style-type: none;
+            color: #111;
+            text-shadow: none;
+        }
+        ::selection{
+            background: #fffac4;
+            color: #111;
+            text-shadow: none;
+        }
+        .menu-item{
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+        .hero-image{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;  
+        }
+        .hero-text{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgb(0, 0, 0,);
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding-top: 7%;
+            padding-bottom: 7%;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 1.25;
+            text-rendering: optimizeLegibility;
+        }
+        #span{
+            color: black;
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }                        
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 112.5%;
+            color: rgb(73, 70, 70);
+            line-height: 1.6667;
+        }
+        blockquote{
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.33333;
+            padding-bottom: 60px;
+            margin-left: -180px;
+            margin-right: -180px;
+            border-bottom: 1px solid #eee;
+            border-top: 3px solid #eee;
+            color: #111;
+            margin: 0 0 30px;
+            padding: 30px 0 40px;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 40px;
+            margin-inline-end: 40px;
+        }
+        blockquote cite{
+            color: #ccc;
+            display: block;
+            font-size: 0.66667;
+            font-style: normal;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+        blockquote.align-left{
+            font-size: 24px;
+            margin-left: -180px;
+            float: left;
+            margin-right: 30px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            max-width: 50%;
+            clear: both;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #eee;
+            border-top: 3px solid #eee;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: larger;
+            font-weight: 700;
+            font-stretch: ultra-expanded;
+            transform: translate(-50%, -50%);
+        }
+        a.square.light{
+            background: transparent;
+            border-color: #eee;
+            color: #ccc;
+        }
+        .share-post a{
+            height: 40px;
+            margin-left: 10px;
+            width: 40px;
+        }
+        .share-post{
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+        a.square{
+            font-size: 14px;
+            border: 2px solid #111;
+            box-sizing: border-box;
+            display: inline-block;
+            font-family: "Montserrat", sans-serif;
+            padding: 0;
+            text-align: center;
+        }
+        .square{
+            position: relative;
+        }
+        svg{
+            fill: currentColor;
+        }
+        .author-list{
+            border: 3px solid #111;
+            margin-bottom: 60px;
+            padding: 15px 30px;
+            position: relative;
+        }
+        .author-list-title{
+            background: #ffea00;
+            color: #111;
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            left: 50%;
+            padding: 3px 10px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+        .author-box{
+            display: flex;
+            padding: 30px 0;
+            position: relative;
+            color: #666;
+            line-height: 1.66667;
+        }
+        .author-box .author-avatar{
+            flex: 0 0 auto;
+            margin-right: 30px;
+        }
+        .author-box .avatar{
+            border-radius: 50%;
+            height: 75px;
+            width: 75px;
+        }
+        .author-box .author-title{
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .author-box .author-links{
+            color: #111;
+            margin: 15px 0 0;
+        }
+        .author-links{
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+        .author-links span{
+            align-self: center;
+            display: inline-flex;
+            margin: 0 10px 5px 0;
+            white-space: nowrap;
+        }
+        .author-links svg,
+        .contacts svg{
+            height: 1em;
+            margin-right: 0.5em;
+            position: relative;
+            top: 0.25em;
+        }
+        svg:not(:root){
+            overflow: hidden;
+        }
+        :not(svg){
+            transform-origin: 0px 0px;
+        }
+        path[Attributes Style]{
+            d: path("M 459.37 151.716 c 0.325 4.548 0.325 9.097 0.325 13.645 c 0 138.72 -105.583 298.558 -298.558 298.558 c -59.452 0 -114.68 -17.219 -161.137 -47.106 c 8.447 0.974 16.568 1.299 25.34 1.299 c 49.055 0 94.213 -16.568 130.274 -44.832 c -46.132 -0.975 -84.792 -31.188 -98.112 -72.772 c 6.498 0.974 12.995 1.624 19.818 1.624 c 9.421 0 18.843 -1.3 27.614 -3.573 c -48.081 -9.747 -84.143 -51.98 -84.143 -102.985 v -1.299 c 13.969 7.797 30.214 12.67 47.431 13.319 c -28.264 -18.843 -46.781 -51.005 -46.781 -87.391 c 0 -19.492 5.197 -37.36 14.294 -52.954 c 51.655 63.675 129.3 105.258 216.365 109.807 c -1.624 -7.797 -2.599 -15.918 -2.599 -24.04 c 0 -57.828 46.782 -104.934 104.934 -104.934 c 30.213 0 57.502 12.67 76.67 33.137 c 23.715 -4.548 46.456 -13.32 66.599 -25.34 c -7.798 24.366 -24.366 44.833 -46.132 57.827 c 21.117 -2.273 41.584 -8.122 60.426 -16.243 c -14.292 20.791 -32.161 39.308 -52.628 54.253 Z");
+            background: #fff;
+        }
+        .author-box +
+        .author-box{
+            border-top: 1px solid #eee;
+        }
+        .author-box .author-description{
+            font-size: 16px;
+            margin-bottom: 0;
+            margin: 15px 0 0;
+        }
+        p{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        }
+        h2{
+            color: #111;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            line-height: 1.25;
+            text-rendering: optimizeLegibility;
+            display: block;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+        }
+        div{
+            display: block;
+        }
+        .comments-area{
+            margin-bottom: 60px;
+        }
+        .comments-title{
+            font-size: 18px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            padding-left: 40px;
+            position: relative;
+            text-transform: uppercase;
+        }
+        .comments-title
+        .icon-plus{
+            background: #ffea00;
+            left: 0;
+            margin-top: -15px;
+            position: absolute;
+            top: 50%;
+        }
+        .icon-plus{
+            color: inherit;
+            height: 30px;
+            width: 30px;
+        }
+        .icon-plus:before{
+            height: 2px;
+            margin-left: -6px;
+            margin-top: -1px;
+            width: 12px;
+        }
+        .icon-plus:before,
+        .icon-plus:after{
+            background: currentColor;
+            content: "";
+            left: 50%;
+            position: absolute;
+            top: 50%;
+        }
+        .icon-plus:after{
+            height: 12px;
+            margin-left: -1px;
+            margin-top: -6px;
+            width: 2px;
+        }
+        .inner{
+            margin: 0 auto;
+            max-width: 740px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        section{
+            display: block;
+        }
+        .inner{
+            margin: 0 auto;
+            max-width: 740px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .subscribe-box{
+            background-color: #eee;
+            margin-bottom: 60px;
+            padding: 30px 30px 40px;
+        }
+        .subscribe-box-title{
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .subscribe-box p{
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        form{
+            display: block;
+            margin-top: 0em;
+        }
+        form[data-members-form] .form-group{
+            display: flex;
+        }
+        form[data-members-form] .subscribe-email{
+            display: block;
+            flex: 1 1 auto;
+        }
+        form[data-members-form] .button{
+            margin-left: 10px;
+            position: relative;
+        }
+        button, .button{
+            height: 42px;
+            font-size: 14px;
+            background: #111;
+            border: 2px solid #111;
+            box-sizing: border-box;
+            color: #fff;
+            display: inline-block;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            padding: 0 20px;
+            text-transform: uppercase;
+        }
+        input[type="email"]{
+            width: 100%;
+        }
+        input{
+            padding: 7px 10px;
+            background: #fff;
+            border: 2px solid #111;
+            border-radius: 0;
+            box-shadow: none;
+            box-sizing: border-box;
+            color: #111;
+            font-size: 14px;
+            font-weight: 400;line-height: 1.5;
+            max-width: 100%;
+            vertical-align: baseline;
+            overflow: visible;
+        }
+        .post-navigation{
+            background-color: #111;
+            font-family: "Montserrat", sans-serif;
+            overflow: hidden;
+        }
+        .post-navigation:before, .post-navigation:after{
+            content: "";
+            display: table;
+        }
+        .post-navigation:after{
+            clear: both;
+        }
+        .nav-previous:only-child, .nav-next:only-child{
+            text-align: center;
+            width: 100%;
+        }
+        .nav-previous{
+            float: right;
+        }
+        .nav-bg{
+            background-position: center;
+            background-size: cover;
+            opacity: .4;
+            position: absolute;          
+        }
+        .nav-inside{
+            bottom: 30px;
+            left: 30px;
+            overflow: hidden;
+            position: absolute;
+            right: 30px;
+            top: 90px;
+        }
+        .footer-image{ 
+            position: relative;
+            text-align: center;       
+        }
+        .footer-image-text{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            transform: translate(-50% -50%);
+        }
+        .footer-widgets{
+            border-top: 1px solid #eee;
+        }
+        .inner-wide{
+            margin: 0 auto;
+            max-width: 1600px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .footer-widgets
+        .widget-area{
+            display: flex;
+        }
+        .widget-recent-posts{
+            margin-bottom: 45px;
+        }
+        .widget{
+            font-size: 16px;
+            margin-bottom: 60px;
+            display: block;
+        }
+        .widget-tags a{
+            background-color: transparent;
+            border: 2px solid #111;
+            color: #111;
+            display: inline-block;
+            font-weight: 700;
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            margin: 0 10px 10px 0;
+            padding: 5px 10px;
+            text-transform: uppercase;
+        }
+        section{
+            display: block;
+        }
+        .widget-title,
+        .recent-title{
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+        }
+        .widget-recent-posts ul{
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0 -15px;
+            padding: 0;
+        }
+        ul{
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        .widget-recent-posts li{
+            border-bottom: 1px solid #eee;
+            box-sizing: border-box;
+            display: flex;
+            flex: 1 1 300px;
+            margin: 0 15px 15px;
+        }
+        .recent-header{
+            flex: 1 1 auto;
+            margin-bottom: 15px;
+        }        
+        .recent-title{
+            line-height: 1.3;
+            margin: 0 0 5px;
+        }
+        h3{
+            color: #111;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            text-rendering: optimizeLegibility;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .recent-meta{
+            color: #ccc;
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .recent-thumb{
+            flex: 0 0 auto;
+            height: 60px;
+            margin: 0 0 15px 10px;
+            position: relative;
+            width: 80px;
+        }
+        .recent-thumb img{
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        img{
+            border: 0;
+        }
+        section{
+            display: block;
+        }
+        aside{
+            display: block;
+        }
+        .footer-col:first-child:nth-last-child(2){
+            flex: 0 0 66.666%;
+        }
+        .footer-col{
+            border-right: 1px solid #eee;
+            box-sizing: border-box;
+            padding-bottom: 60px;
+            padding-top: 90px;
+            padding: 60px 60px 30px;
+            flex: 0 0 33.333%;
+        }
+        .footer-col:last-child{
+            border: 0;
+        }
+        .site-footer{
+            text-align: left;
+            background: #111;
+            padding-bottom: 30px;
+            padding-top: 60px;
+        }
+        footer{
+            display: block;
+        }
+        .inner-wide{
+            margin: 0 auto;
+            max-width: 1600px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .site-footer-inside{
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+        }
+        .offsite-links{
+            justify-content: start;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        a.square.dark{
+            background: #252525;
+            border-color: #252525;
+            color: #ccc;
+        }
+        .offsite-links a{
+            margin: 0 2px 4px;
+        }
+        a.square{
+            font-size: 14px;
+            height: 50px;
+            line-height: 3.28571;
+            width: 50px;
+            border: 2px solid #111;
+            box-sizing: border-box;
+            display: inline-block;
+            font-family: "Montserrat", sans-serif;
+            padding: 0;
+            text-align: center;
+        }  
+        .square svg{
+            height: 16px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50% -50%);
+        }
+        .site-info{
+            margin-right: auto;
+            min-width: 25%;
+            color: #666;
+            font-family: "Montserrat", sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .site-info a{
+            border-color: transparent;
+            color: #ffea00;
+        }
+        #top-link{
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #top-link{
+            background-color: #ffea00;
+            border-color: #ffea00;
+            color: #111;
+        }
+        .icon-angle-up{
+            margin-left: -6px;
+            margin-top: -3px;
+            transform: rotate(-45deg);
+            background: 0;
+            border-color: currentColor;
+            border-style: solid;
+            border-width: 2px 2px 0 0;
+            box-sizing: border-box;
+            height: 12px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            width: 12px;
+        }
+        .screen-reader-text{
+            border: 0;
+            clip: rect(1px 1px 1px 1px);
+            height: 1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute !important;
+            width: 1px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <!-- <div class="site-branding">
+            <p class="site-title">
+                
+            </p>
+        </div> -->
+        <!-- .site-branding-->
+        <nav class="site-navigation">
+            <ul class="menu">
+                <li class="site-title menu-item">
+                    <a href="https://curious.justgoodthemes.com" style="font-size: 30px; font-weight: 700; line-height: 1.25;">Curious</a>
+                </li>
+                <li class="menu-item about">
+                    <a href="https://curious.justgoodthemes.com/about">About</a>
+                <li class="menu-item style guide">
+                 <a href="https://curious.justgoodthemes.com/style-guide">Style Guide</a>
+                <li class="menu-item pricing">
+                    <a href="https://curious.justgoodthemes.com/pricing/">Pricing</a>
+                <li class="menu-item ghost hosting">
+                    <a href="https://ghost.org/pricing/?via=tomas40">Ghost hosting</a>
+                </li>
+                <li class="menu-item buy-curious">
+                    <a href="http://themeforest.net/item/curious-blog-and-magazine-ghost-theme/13139486?ref=justgoodthemes">Buy Curious</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero-image">
+            <img src="Looking for.jpg" alt="powerline" style="width: 100%; height: 613px;">
+            <div class="hero-text">
+                <h1>What To Know Before<br> Moving To New York
+                    <br>
+            <span style="color: rgb(212, 209, 209); font-size: 15px; font-weight: 230;">BY</span> <span style="font-size: 15px; font-weight: 250; color: yellow;">ERIC WATSON, NANCY PEREZ</span> <span style="color: rgb(212, 209, 209); font-size: 15px; font-weight: 250;">ON APRIL 20, 2018</span></h1>
+            </div>
+        </div>
+    </header>
+        <p style="padding-left: 25%; padding-top: 4%; padding-right: 25%;">New York is a state in the Northeastern and Mid-Atlantic regions of the United States. New York 
+        is the 27th-most extensive, the fourth-most populous, and the seventh-most densely
+         populated of the 50 United States. New York is bordered by New Jersey and Pennsylvania to
+         the south and Connecticut, Massachusetts, and Vermont to the east. The state has a maritime 
+         border with Rhode Island east of Long Island, as well as an international border with the 
+         Canadian provinces of Quebec to the north and Ontario to the west and north. The state of 
+         New York is often referred to as <strong> New York State </strong> the <strong> State of New York </strong> to distinguish 
+         it from New York City, the state's most populous city and its economic hub.</p>
+
+         <blockquote class="align-left" style="padding-left: 25%; padding-top: 4%;">
+             <p>
+                “When I’m in New York, I just want to walk down the street and feel this thing, like I’m in a movie.”
+                <cite>― Ryan Adams</cite>
+             </p>
+         </blockquote>
+         <p style="padding-left: 25%; padding-right: 28%;">With a Census-estimated population of nearly 8.5 million in 
+             2014, New York City is the most populous city in the United 
+             States. The city is the nucleus of the premier gateway for legal 
+             immigration to the United States — the New York City 
+             Metropolitan Area, one of the most populous urban 
+             agglomerations in the world. New York City is also known for 
+             being the location of Ellis Island, the largest historical gateway 
+             for immigration in the history of the United States. A global 
+             power city, New York City exerts a significant impact upon 
+             commerce, finance, media, art, fashion, research, technology, 
+             education, and entertainment. The home of the United Nations Headquarters, New York City 
+             is an important center for international diplomacy and has been described as the cultural and 
+             financial capital of the world, as well as the world's most economically powerful city.
+            <br>
+            <br>
+            New York City alone makes up over 40 percent of the population of New York State. Two-
+            thirds of the state's population lives in the New York City Metropolitan Area, and nearly 40% 
+            live on Long Island. Both the state and New York City were named for the 17th century Duke 
+            of York, future King James II of England. The next four most populous cities in the state are 
+            Buffalo, Rochester, Yonkers, and Syracuse, while the state capital is Albany.</p>
+        <h2 style="padding-left: 25%;">Image Gallery</h2>
+            <div class="column">
+                <img src="Image Gallery1.jpg" alt="Bridge at night" style="width:100%; padding-left: 30px;">
+        </div>
+        <div class="column">
+            <img src="Image Gallery2.jpg" alt="New York Labelled" style="width:100%; padding-right: 30px;">
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="Image Gallery3.jpg" alt="Bridge in the day" style="width:100%; padding-left: 30px;">
+        </div>
+        <div class="column">
+            <img src="Image Gallery4.jpg" alt="Island" style="width:100%; padding-right: 30px;">
+        </div>
+        </div>
+        <p style="padding-left: 26%; padding-right: 24%;">The earliest Europeans in New York were French colonists and Jesuit missionaries who 
+            arrived southward from settlements at Montreal for trade and proselytizing. New York had 
+            been inhabited by various tribes of Algonquian and Iroquoian-speaking Native Americans for 
+            several hundred years by the time Dutch settlers moved into the region in the early 17th 
+            century. In 1609, the region was first claimed by Henry Hudson for the Dutch, who built Fort 
+            Nassau in 1614 at the confluence of the Hudson and Mohawk rivers, where the present-day 
+            capital of Albany later developed. The Dutch soon also settled New Amsterdam and parts of 
+            the Hudson Valley, establishing the colony of New Netherland based on trade and 
+            profitmaking, a multicultural community from its earliest days and a center of trade and 
+            immigration. The British annexed the colony from the Dutch in 1664. The borders of the 
+            British colony, the Province of New York, were quite similar to those of the present-day state.</p>
+        <img src="On The Street Of New York.jpg" alt="Cars on the street at night" style="height: 800px; width: 100%;">
+        <blockquote style="padding-left: 10%; padding-right: 10%;">
+        “I go to Paris, I go to London, I go to Rome, and I always say, There’s no place like New York. It’s the most exciting city in the world now. That’s 
+        the way it is. That’s it.”
+            <cite>_ Robert De Niro</cite>
+        </blockquote>
+        <p style="padding-left: 25%; padding-right: 25%;">Many landmarks in New York are well known to both international and domestic visitors, 
+            with New York State hosting four of the world's ten most-visited tourist attractions in 2013: 
+            Times Square, Central Park, Niagara Falls (shared with Ontario), and Grand Central 
+            Terminal. New York is home to the Statue of Liberty, a symbol of the United States and its 
+            ideals of freedom, democracy, and opportunity. New York's higher education network 
+            comprises approximately 200 colleges and universities, including Columbia University, 
+            Cornell University, New York University, and Rockefeller University, which have been 
+            ranked among the top 35 in the world.</p>
+            <h3 style="text-align: justify; padding-left: 25%; font-size: 30px;">History
+            <br>
+            <br>
+            16th century </h3>
+        <img src="New-York-2-1.jpg" alt="Skyscraper" style="display: inline; width: 30%; height: 550px; float: right; padding-top: 2%; padding-right: 10%;">
+        <p style="display: inline-block; width: 70%; padding-left: 25%;">In 1524, Giovanni da Verrazzano, an Italian explorer in the service of the French crown, explored the Atlantic coast of North America between the Carolinas and Newfoundland, including New York Harbor and Narragansett Bay. On April 17, 1524 Verrazanno entered New York Bay, by way of the Strait now 
+            called the Narrows into the northern bay which he named Santa Margherita, in honour of the King of France's sister. Verrazzano described it as "a vast coastline with a deep delta in which every kind of ship could pass" and he adds: "that it extends inland for a league and opens up to form a beautiful lake. This vast sheet of water swarmed with native boats". 
+            He landed on the tip of Manhattan and perhaps on the furthest point of Long Island. Verrazanno's stay in this place was interrupted by a storm which pushed him north towards Martha's Vineyard.
+                <br>
+                <br>
+            In 1540 French traders from New France built a chateau on Castle Island, within present-day Albany; due to flooding, it was abandoned the next year. In 1614, the Dutch under the command of Hendrick Corstiaensen, rebuilt the French chateau, which they called Fort Nassau.
+            Fort Nassau was the first Dutch settlement in North America, and was located along the Hudson River, also within present-day Albany. The small fort served as a trading post and warehouse. Located on the Hudson River flood plain, the rudimentary "fort" was washed away by 
+            flooding in 1617, and abandoned for good after Fort Orange (New Netherland) was built nearby in 1623.</p>
+            </div>
+        <h4 style="font-size: 40px; font-weight: 900; padding-left: 25%;">17th century</h4>
+        <p style="padding-left: 25%; padding-right: 25%;">Henry Hudson's 1609 voyage marked the beginning of European involvement with the area. Sailing for the Dutch East India Company and looking for a passage to Asia, he entered the Upper New York Bay on September 11 of that year. Word of his findings encouraged Dutch merchants to explore the coast in search for profitable fur trading with local tribes.</p>
+        <img src="New-York-3.jpg" alt="Offices in daylight" style="display: inline; width: 30%; height: 450px; float: left; margin-top: 30px; padding-left: 10%;">
+        <p style="display: inline-block; width: 70%; padding-right: 25%; padding-left: 3%; font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 30px;">
+            During the 17th century, Dutch trading posts established for the 
+            trade of pelts from the Lenape, Iroquois, and other tribes were
+            founded in the colony of New Netherland. The first of these
+            trading posts were Fort Nassau (1614, near present-day Albany);
+             Fort Orange (1624, on the Hudson River just south of the current
+              city of Albany and created to replace Fort Nassau), developing 
+              into settlement Beverwijck (1647), and into what became Albany;
+               Fort Amsterdam (1625, to develop into the town New Amsterdam 
+               which is present-day New York City); and Esopus, (1653, now 
+               Kingston). The success of the patroonship of Rensselaerswyck
+                (1630), which surrounded Albany and lasted until the mid-19th 
+                century, was also a key factor in the early success of the colony. 
+                The English captured the colony during the Second Anglo-Dutch 
+                War and governed it as the Province of New York. The city of
+                New York was recaptured by the Dutch in 1673 during the Third
+                Anglo-Dutch War (1672–1674) and renamed New Orange. It was
+                returned to the English under the terms of the Treaty of
+                Westminster a year later.
+        </p>
+        <h5 style="font-size: 1.8em; font-weight: 900; text-align: center;">Geography</h5>
+        <p style="padding-left: 25%; padding-right: 25%;">New York covers 54,555 square miles (141,300 km2) and ranks as the 27th largest state by size. The Great Appalachian Valley dominates eastern New York and contains the Lake Champlain Valley as its northern half and the Hudson Valley as its southern half within the state. The rugged Adirondack Mountains, with vast tracts of wilderness, lie west of the Lake Champlain Valley. The Hudson River begins near Lake Tear of the Clouds and flows south through the eastern part of the state without draining Lakes George or Champlain. Lake George empties at its north end into Lake Champlain, whose northern end extends into Canada, where it drains into the Richelieu River and then ultimately the Saint Lawrence River. Four of New York City's five boroughs are situated on three islands at the mouth of the Hudson River: Manhattan Island; Staten Island; and Long Island, which contains Brooklyn and Queens at its western end.
+
+            Most of the southern part of the state rests on the Allegheny Plateau, which rises from the southeastern United States to the Catskill Mountains; the section in New York State is known as the Southern Tier. The western section of the state is drained by the Allegheny River and rivers of the Susquehanna and Delaware River systems. 
+            The Delaware River Basin Compact, signed in 1961 by New York, New Jersey, Pennsylvania, Delaware, and the federal government, regulates the utilization of water of the Delaware system. 
+            The highest elevation in New York is Mount Marcy in the Adirondacks, at 5,344 ft (1,629 m) above sea level; while the state's lowest point is at sea level, on the Atlantic Ocean. [ Source ]</p>
+    </div>
+            <footer class="post-footer inner">
+        <div class="share-post">
+            <span style="font-size: 14px; color: #ccc; align-items: center; flex-wrap: wrap; margin-bottom: 60px; margin-top: 30px;">SHARE</span>
+            <a class="square light" href="https://twitter.com/intent/tweet?text=What%20To%20Know%20Before%20Moving%20To%20New%20York&amp;url=https://curious.justgoodthemes.com/what-to-know-before-moving-to-new-york/" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <title>Twitter</title><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+            </a>   
+            <a class="square light" href="https://www.facebook.com/sharer.php?u=https://curious.justgoodthemes.com/what-to-know-before-moving-to-new-york/" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <title>Facebook</title><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                </svg>
+            </a>
+            <a class="square light" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://curious.justgoodthemes.com/what-to-know-before-moving-to-new-york/&amp;title=What%20To%20Know%20Before%20Moving%20To%20New%20York&amp;source=Curious" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <title>LinkedIn</title><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+            </svg>
+            </a>
+        </div>
+        <!-- .author-list-->
+        <div class="author-list">
+            <div class="author-list-title">Written by</div>
+            <div class="author-box">
+                <div class="author-avatar">
+                    <img src="https://curious.justgoodthemes.com/content/images/2018/12/john.jpg" alt="Eric Watson" class="avatar">
+                </div>
+                <div class="author-details">
+                    <h2 class="author-title">
+                        <a href="/author/eric-watson">Eric Watson</a>
+                    </h2>
+                    <p class="author-description">
+                        Eric is a web designer, speaker, and author. He is the Creative Director of Awesome Design studio, co-founder of magazine Camera and a coffee junkie.
+                    </p>
+                    <p class="author-links">
+                        <span class="author-twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <title>Twitter</title>
+                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                            </svg>
+                            <a href="https://twitter.com/justgoodthemes" target="_blank" rel="noopener">Twitter</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+                <div class="author-box">
+                    <div class="author-avatar">
+                        <img src="https://curious.justgoodthemes.com/content/images/2018/12/jane.jpg" alt="Nancy Perez" class="avatar">
+                    </div>
+                    <div class="author-details">
+                        <h2 class="author-title">
+                            <a href="/author/nancy-perez/">Nancy Perez</a>
+                        </h2>
+                        <p class="author-description">
+                            "Nancy is a reporter at Wild Bird magazine, where she writes about technology / design companies and the people they impact."
+                        </p>
+                        <p class="author-links">
+                            <span class="author-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <title>Map Marker</title>
+                                    <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path>
+                                </svg>
+                                The Internet
+                            </span>
+                            <span class="author-website">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28">
+                                    <title>Link</title>
+                                    <path d="M22.75 19c0-.406-.156-.781-.438-1.062l-3.25-3.25A1.516 1.516 0 0018 14.25c-.453 0-.812.172-1.125.5.516.516 1.125.953 1.125 1.75a1.5 1.5 0 01-1.5 1.5c-.797 0-1.234-.609-1.75-1.125-.328.313-.516.672-.516 1.141 0 .391.156.781.438 1.062l3.219 3.234c.281.281.672.422 1.062.422s.781-.141 1.062-.406l2.297-2.281A1.48 1.48 0 0022.75 19zM11.766 7.984a1.51 1.51 0 00-.438-1.062L8.109 3.688c-.281-.281-.672-.438-1.062-.438s-.781.156-1.062.422L3.688 5.953a1.484 1.484 0 000 2.109l3.25 3.25A1.5 1.5 0 008 11.734c.453 0 .812-.156 1.125-.484C8.609 10.734 8 10.297 8 9.5A1.5 1.5 0 019.5 8c.797 0 1.234.609 1.75 1.125.328-.313.516-.672.516-1.141zM25.75 19a4.468 4.468 0 01-1.328 3.172l-2.297 2.281a4.466 4.466 0 01-3.172 1.297 4.44 4.44 0 01-3.187-1.328l-3.219-3.234a4.466 4.466 0 01-1.297-3.172c0-1.234.5-2.406 1.375-3.266l-1.375-1.375A4.539 4.539 0 018 14.75a4.514 4.514 0 01-3.187-1.313l-3.25-3.25A4.454 4.454 0 01.25 7c0-1.188.484-2.344 1.328-3.172l2.297-2.281A4.466 4.466 0 017.047.25a4.44 4.44 0 013.187 1.328l3.219 3.234a4.466 4.466 0 011.297 3.172c0 1.234-.5 2.406-1.375 3.266l1.375 1.375A4.539 4.539 0 0118 11.25c1.188 0 2.344.469 3.187 1.313l3.25 3.25A4.454 4.454 0 0125.75 19z"></path>
+                                </svg>
+                                <a href="https://ghost.org" target="_blank" rel="noopener">Website</a>
+                            </span>
+                            <span class="author-twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <title>Twitter</title>
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                </svg>
+                                <a href="https://twitter.com/justgoodthemes" target="_blank" rel="noopener">Twitter</a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <!-- .author-list-->
+    </footer>
+    <!--post-footer-->
+    <section class="comments-area inner">
+        <h2 class="comments-title">
+            <span class="icon-plus" aria-hidden="true">
+            </span>
+            Comments
+        </h2>
+        <div id="disqus_thread"></div>
+    </section>
+    <!-- .comments-area-->
+    <div class="inner">
+        <section class="subscribe-box">
+            <h2 class="subscribe-box-title">Subscribe to curious</h2>
+            <p>Subscribe today and get access to a private newsletter and new content every week!</p>
+            <form data-members-form="subsribe" class="subscribe-form">
+                <div class="form-group">
+                    <input data-members-email class="subscribe-email" type="email" placeholder="Your email address">
+                    <button class="button" type="submit">
+                        <span class="button-content">Subscribe</span>
+                    </button>
+                </div>
+        </section>
+    </div>
+    <div class="footer-image">
+    <img src="Looking for 2.jpg" alt="Fusion festival" style="width: 1510px; height: 500px;">
+    <div class="footer-image-text">
+        <span style="color: #ffea00; display: block; font-family: Montserrat, sans-serif; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;">Previous</span>
+        <br>
+        <span style="color: #fff; font-size: 30px; display: block; font-weight: bold; line-height: 1.2; font-family: Montserrat, sans-serif;">Seven Things That Will Make Or Break Fusion Festival<span>
+            <br>
+            <span style="color:rgb(230, 225, 225); font-size: 14px; font-family: Montserrat, sans-serif; letter-spacing: 1px; text-transform: uppercase;">APRIL 17, 2018</span>
+    </div>
+    </div>
+    <aside class="footer-widgets">
+        <div class="inner-wide">
+            <div class="widget-area">
+                <div class="footer-col">
+                    <section class="widget widget-recent-posts">
+                        <h2 class="widget-title">Latest Posts</h2>                     
+                        <ul>
+                            <li>
+                                <div class="recent-header">
+                                    <h3 class="recent-title">
+                                        <a href="/what-to-know-before-moving-to-new-york/">what to know before moving to new york</a>
+                                    </h3>
+                                    <div class="recent-meta">
+                                        <time class="published" datetime="2018-04-20">April 20, 2018</time>
+                                    </div>
+                                </div>
+                                <a href="/what-to-know-before-moving-to-new-york/" class="recent-thumb">
+                                <img src="https://curious.justgoodthemes.com/content/images/2017/09/New-York-2.jpg" alt="What To Know Before Moving To New York">
+                                </a>
+                            </li>
+                            <li>
+                            <div class="recent-header">
+                                <h3 class="recent-title">
+                                    <a href="/six-things-that-will-make-or-break-fusion-festival/">seven things that will make or break fusion festival</a>
+                                </h3>
+                                <div class="recent-meta">
+                                    <time class="published" datetime="2018-04-17">April 17, 2018</time>
+                                </div>
+                            </div>
+                            <a href="/six-things-that-will-make-or-break-fusion-festival/" class="recent-thumb">
+                            <img src="https://curious.justgoodthemes.com/content/images/2017/09/Festival.jpg" alt="Seven Things That Will Make Or Break Fusion Festival">
+                            </a>
+                            </li>
+                        <li>
+                            <div class="recent-header">
+                                <h3 class="recent-title">
+                                    <a href="/visiting-London-for-the-first-time/">visiting london for the first time</a>
+                                </h3>
+                                <div class="recent-meta">
+                                    <time class="published" datetime="2018-04-12">April 12, 2018</time>
+                                </div>
+                            </div>
+                            <a href="/visiting-London-for-the-first-time/" class="recent-thumb">
+                            <img src="https://curious.justgoodthemes.com/content/images/2017/09/London.jpg" alt="Visiting London For The First Time">
+                            </a>
+                        </li>
+                        <li>
+                            <div class="recent-header">
+                                <h3 class="recent-title">
+                                    <a href="/basic-rules-for-walking-in-the-mountains/">basic rules For walking in the mountains</a>
+                                </h3>
+                                <div class="recent-meta">
+                                    <time class="published" datetime="2017-09-24">September 24, 2017</time>
+                                </div>
+                            </div>
+                            <a href="/basic-rules-for-walking-in-the-mountains/" class="recent-thumb">
+                            <img src="https://curious.justgoodthemes.com/content/images/2017/09/landscape_2.jpg" alt="Basic Rules For Walking In The Mountains">
+                            </a>
+                        </li>
+                        </ul>
+                    </section>
+                    <!-- .widget-->
+                </div>
+                <div class="footer-col">
+                    <section class="widget widget-tags">
+                        <h2 class="widget-title">Tags</h2>
+                        <div class="tagcloud">
+                            <a href="/tag/getting-started/">Getting started</a>
+                            <a href="/tag/travel">travel</a>
+                            <a href="/tag/tips">tips</a>
+                            <a href="/tag/design">design</a>
+                            <a href="/tag/music">music</a>
+                            <a href="/tag/photography">photography</a>
+                            <a href="/tag/minimal">minimal</a>
+                            <a href="/tag/science">science</a>
+                            <a href="/tag/adventure">adventure</a>
+                        </div>
+                    </section>
+                <!-- .widget-->
+                </div>
+            </div>
+            <!-- .widget-area-->
+        </div>
+        <!-- .inner-wide-->
+    </div>
+    <footer class="site-footer">
+        <div class="inner-wide">
+            <div class="site-footer-inside">
+                <div class="offsite-links">
+                    <a href="https://twitter.com/justgoodthemes" class="square dark" target="_blank" rel="nooper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <title>Twitter</title>
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/justgoodthemes" class="square dark" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <title>Facebook</title>
+                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="square dark" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <title>Instagram</title>
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="square dark" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <title>LinkedIn</title>
+                            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="square dark" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <title>GitHub</title>
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://curious.justgoodthemes.com/rss/" class="square dark" target="_blank" rel="noopener">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <title>RSS Feed</title>
+                            <path d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- .offsite-links-->
+                <div class="site-info">
+                    <a href="https://curious.justgoodthemes.com">Curious</a> © 2021
+                    <br>
+                    Curious theme by <a target="_blank" href="https://justgoodthemes.com/" rel="noopener">Just Good Themes</a>
+                </div>
+                <!-- .site-info-->
+                <a href="#page" id="top-link" class="top-link square">
+                    <span class="icon-angle-up" aria-hidden="true"></span>
+                    <span class="screen-reader-text">Back to top</span>
+                </a>
+            </div>
+                <!-- .site-footer-inside-->
+        </div>
+            <!-- .inner-wide-->
+        </footer>
+    </body>
+</html>

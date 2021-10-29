@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: none;
+            color: blue;
+        }
+        h4{
+            text-decoration: none;
+            color: red;
+            font-size: larger;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Measurement Units In CSS</h1>
+    <p1>
+      Absolute Lengths:
+     <ol>
+     <li>pixels................px </li>
+     <li>centimeters.......cm </li>
+     <li>millimeters........m  </li>
+     <li>inches................in </li>
+     <li>points.................pt </li>
+     <li>picas..................pc </li>
+     </ol>
+     Relative Lengths:
+     <ol>
+         <li>em........Relative to the font-size of the element (2em means 2 times the size of the current font</li>
+         <li>ex..........Relative to the x-height of the current font</li>
+         <li>ch..........Relative to the width of the "0" (zero)</li>
+         <li>rem......Relative to font-size of the root element</li>
+         <li>vw.......Relative to 1% of the width of the newport</li>
+         <li>vh.......Relative to 1% of the height of the newport</li>
+         <li>vmin.......Relative to 1% of viewport's smaller dimension</li>
+         <li>vmax........Relaive to 1% of viewport's larger dimension</li>
+         <li>%..........Relaive to the parent element</li>
+     </ol>
+    </p1>
+    <h2>Differences between Absolute and Relative Lengths</h2>
+        Absolute length units are fixed and a length expressed in any of these will appear as exactly that size while Relative length units
+        specify a length relative to another length property. Relative length units scale better between different rendering medium.
+    <h3>Difference between Px, em and %</h3>
+    Px is a static measurement, while % and em are relative measurements. % depends on its parent font size while em is relative to the 
+    current font size of the elements
+    <h4>BLOCK AND INLINE ELEMENTS</h4>
+    <table style="width:50%">
+        <tr>
+          <th>Block Elements</th>
+          <th>Inline Elements</th>
+        </tr>
+        <tr>
+          <td> < address >, < aside >, < canvas >, < div >, < footer >, < form >, < h1>-< h6> </td>
+          <td> < a >, < button >, < script >, < em >, < i > </td>
+        </tr>
+        <tr>
+          <td> < header >, < article >, < hr >, < li >, < nav >, < ol >, < p >, < video >, < ul > </td>
+          <td> < abbr >, < img >, < input >, < object >, < output > </td>
+        </tr>
+        <tr>
+            <td> < tfoot >, < section >, < table >, < video >, < ul > </td>
+            <td> < select >, < small >, < span >, < strong >, < sub >, < sup >, < time >
+      </table>
+
+</body>
+</html>

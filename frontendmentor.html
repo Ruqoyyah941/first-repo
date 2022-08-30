@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor Challenge 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .card{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: auto;
+            text-align: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 13px;
+            margin-top: 6cm;
+            margin-bottom: 4cm;
+            margin-left: 16.77cm;
+            margin-right: 15cm;
+        }
+        .cont{
+            display: inline-block;
+            max-width: 900px;
+            margin: auto;
+        }
+        .cont img{
+            display: inline-block;
+            width: 350px;
+            border-radius: 13px 0px 0px 13px;
+            margin-right: 100px;
+        }
+        .text{
+            display: inline-block;
+        }
+        .cont2{
+            float: right;
+            width: 250px;
+        }
+        #perfume{
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-size: small;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #title{
+            text-transform: capitalize;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;     
+        }
+        #text{
+            font-size: 20px;
+            color: darkgray;
+            font-weight: bolder;
+        }
+        button{
+            background-color: green;
+            color: aliceblue;
+            border-color: green;
+            border-radius: 10px;
+            align-self: center;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="cont">
+            <img src="Frontendmentor1-desktop.jpg" alt="perfume-glass">
+            <div class="cont2">
+                <h3 class="text" id="perfume">perfume</h3>
+                <br>
+                <br>
+                <h2 class="text" id="title">gabrielle essence eau de parfum</h2>
+                <br>
+                <br>
+                <p class="text" id="text">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <br>
+                <br>
+                <p class="price"> <span style="font-size: 40px; color: green; font-family: Arial, Helvetica, sans-serif;">$149.99</span>  <span style="font-size: 20px; color: darkgray; font-weight: bold;"><S>$169.99</S></span></p>
+                <button>Add to Cart</button>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
